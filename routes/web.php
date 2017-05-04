@@ -15,14 +15,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/page', function () {
-    return 'Hello, this is the homepage';
+Route::get('/Wall/{wall}', function ($wall) {
+    return 'Wall '.$wall;
 });
-
-Route::get('user/{id}', function ($id) {
-    return 'User '.$id;
-});
-
-
 
 Auth::routes();
