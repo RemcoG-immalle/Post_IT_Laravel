@@ -11,6 +11,14 @@ class WallsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      DB::table('walls')->insert([
+        'wall_name' => str_random(10),
+        'user_id' => 1,
+      ]);
+
+      DB::table('walls')->insert([
+        'wall_name' => str_random(10),
+        'user_id' => 2,
+      ]);
     }
 }
