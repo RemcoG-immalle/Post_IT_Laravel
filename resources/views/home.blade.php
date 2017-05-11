@@ -39,5 +39,4 @@
   <div id="bottom-border"></div>
 </body>
 </html>
-
 @endsection
