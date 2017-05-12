@@ -30,7 +30,6 @@ p {
   font-size: 2em;
 }
 
-
 /* Search Bar */
 
 .search {
@@ -38,8 +37,14 @@ p {
   margin: 15px;
   position: absolute;
   right: 0;
-  top: 7%;
+  top: 4.5em;
   background-color: #ABD0C0;
+}
+
+#searchbutton {
+  position: absolute;
+  right: 0;
+  top: 5em;
 }
 
 /* http://paletton.com/#uid=5330u0khgp75JIqbiuYnvj4ttdc */

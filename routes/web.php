@@ -21,4 +21,4 @@ Route::get('/Wall/{wall}', function ($wall) {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('welcome');

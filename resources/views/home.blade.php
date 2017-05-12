@@ -6,9 +6,9 @@
   <title>Post IT</title>
 
   <!-- Materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" href="{{ URL::asset('css/materialize.css') }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="{{ URL::asset('js/materialize.js') }}"></script>
 
   <!-- Google Font -->
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
@@ -18,7 +18,7 @@
 
 <body>
 
-  <!-- Search Bar-->
+  <!-- Search Bar -->
   <nav class="search">
   <div class="nav-wrapper">
     <form>
@@ -26,6 +26,7 @@
         <input id="search" type="search" required>
         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
         <i class="material-icons">close</i>
+        <button id="searchbutton" class="btn waves-effect waves-light" type="submit" name="action">Search</button>
       </div>
     </form>
   </div>
@@ -50,6 +51,7 @@
   </div>
 
   <div id="bottom-border"></div>
+  <script src="{{ URL::asset('js/script_home.js') }}"></script>
 </body>
 </html>
 @endsection
