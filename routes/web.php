@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/Wall/{wall}', function ($wall) {
-    return 'Wall '.$wall;
+    return view('wall', ['wall' => $wall]);
 });
 
 Auth::routes();

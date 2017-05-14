@@ -15,4 +15,5 @@ class Walls extends Model
     {
         return $this->hasMany('App\Messages');
     }
+
 }
