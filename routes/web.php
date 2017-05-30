@@ -16,7 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('/Wall/{wall}', function ($wall) {
-    return view('wall', ['wall' => $wall]);
+    if (App\Walls::where('wall_name', $wall)->first()) {
+      return view('wall', ['wall' => $wall]);
+    } else {
+      return view('404');
+    }
+
+
 });
 
 Auth::routes();
