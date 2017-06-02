@@ -7,7 +7,7 @@ var font;
 var vehicles = [];
 
 function preload() {
-  font = loadFont('LemonMilk.otf');
+  font = loadFont('public/fonts/AvenirNextLTPro-Demi.otf');
 }
 
 function setup() {

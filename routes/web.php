@@ -22,7 +22,10 @@ Route::get('/Wall/{wall}', function ($wall) {
       return view('404');
     }
 
+});
 
+Route::get('/404', function () {
+    return view('404');
 });
 
 Auth::routes();
