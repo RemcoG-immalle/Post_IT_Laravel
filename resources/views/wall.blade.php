@@ -14,6 +14,9 @@
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="{{ URL::asset('css/style_home.css') }}">
+
+  {{ $wallid = App\Walls::where("wall_name", $wall)->first()->i }}
+  {{ $messages = App\Messages::where("wall_id", $wallid)->get() }}
 </head>
 
 <body>
@@ -21,6 +24,12 @@
 
     <!-- Title -->
     <h1 class="center-align">Theme: {{ $wall }}</h1>
+
+    <ul>
+      @foreach ($messages as $msg)
+        <li>{{ $msg->content }}</li>
+      @endforeach
+    </ul>
 
   </div>
 
